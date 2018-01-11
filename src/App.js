@@ -11,7 +11,6 @@ class Post extends Component {
           <h1 className="Post-title">Dino Blog</h1>
           <p className="Post-intro">
             All the latest and greatest things from 65 million years ago.
-            Note that at this stage, we are only displaying ONE post and ONE comment!
           </p>
         </header>
         <h1 className="Title">{this.props.posts[0].title} by {this.props.posts[0].author}</h1>
