@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+import Author from './Author.js';
+import Comment from './Comment.js';
+
 class Blog extends Component {
   render() {
     const allPosts = this.props.posts.map(p => {
@@ -17,17 +20,9 @@ class Blog extends Component {
     });
     return (
       <div className="Post">
-        <header className="Post-header">
-          <img src={logo} className="Post-logo" alt="logo" />
-          <h1 className="Post-title">Dino Blog</h1>
-          <p className="Post-intro">
-            All the latest and greatest things from 65 million years ago.
-          </p>
-        </header>
         {allPosts}
         <hr />
       {/* this is how we comment */}
-        <p>Note, at this stage, we are only rendering ONE post with ONE comment!</p>
       </div>
     );
   }
