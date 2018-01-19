@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import{
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+
+
+import Author from './Author.js';
+import Comment from './Comment.js';
+
 class Post extends Component {
   render() {
     return (
@@ -13,14 +23,13 @@ class Post extends Component {
             All the latest and greatest things from 65 million years ago.
           </p>
         </header>
-        <h1 className="Title">{this.props.posts[0].title} by {this.props.posts[0].author}</h1>
-        <p className="Post-intro">
-          {this.props.posts[0].content}
-        </p>
-        <h2>Comments</h2>
-        {this.props.posts[0].comments[0]}
         <hr />
-        <p>Note, at this stage, we are only rendering ONE post with ONE comment!</p>
+        <Router>
+          <Link to="/blog">Blog it up!</Link>
+
+          <Route exact path=""
+        </Router>
+      {/* this is how we comment */}
       </div>
     );
   }

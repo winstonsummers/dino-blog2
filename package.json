@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "react-scripts": "1.0.17"
@@ -14,5 +15,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This (the code on the master branch) is where you should be at following the in-class lab about props. This is finished code to compare to your own code.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandiw/react-blog-deliverable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandiw/react-blog-deliverable/issues"
+  },
+  "homepage": "https://github.com/brandiw/react-blog-deliverable#readme"
 }
